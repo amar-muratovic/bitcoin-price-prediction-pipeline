@@ -20,12 +20,12 @@ Finally, it makes predictions using this neural network, prints the predictions 
 
 1. Clone the repository or download the script
 
-git clone https://github.com/your-username/Bitcoin-Price-Prediction-Pipeline.git
+    git clone https://github.com/your-username/Bitcoin-Price-Prediction-Pipeline.git
 
 
 2. Install the required packages
 
-pip install [package]
+    pip install [package]
 
 
 ## Usage
@@ -35,7 +35,7 @@ The file should have columns named "Date", "Open", "High", "Low", "Close" and "V
 
 2. Run the script by using the command:
 
-python main.py
+    python main.py
 
 
 ## Note
