@@ -1,4 +1,5 @@
-import ccxt, os
+import ccxt
+import os
 import pandas as pd
 from sklearn.linear_model import LinearRegression, BayesianRidge
 from sklearn.ensemble import RandomForestRegressor
@@ -109,8 +110,10 @@ for model in models:
     grid_search = GridSearchCV(model, param_grid, cv=5)
     # Fit the grid search to the data
     grid_search.fit(X_train, y_train)
-    print(f"Best parameters for {model.__class__.__name__}: {grid_search.best_params_}")
-    print(f"Best cross-validation score for {model.__class__.__name__}: {grid_search.best_score_:.2f}")
+    print(
+        f"Best parameters for {model.__class__.__name__}: {grid_search.best_params_}")
+    print(
+        f"Best cross-validation score for {model.__class__.__name__}: {grid_search.best_score_:.2f}")
 
 
 #Fine-tune the model using cross-validation and hyperparameter tuning
